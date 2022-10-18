@@ -1,5 +1,5 @@
 export async function getGeocode (location, key) {
-  let geodata = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${key}`);
+  let geodata = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${key}`);
   let response = await geodata.json();
   return response[0];
 }
