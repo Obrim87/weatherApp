@@ -62,7 +62,7 @@ const weatherApp = (() => {
     document.querySelector('.weatherDesc').textContent = weatherObj.weatherDesc();
     document.querySelector('.temp').textContent = `${weatherObj.temp}°C`;
     document.querySelector('.feelsLike').textContent = `Feels like ${weatherObj.feelsLike}°C`;
-    document.querySelector('#weatherIcon').src = `http://openweathermap.org/img/w/${weatherObj.weatherIcon}.png`;
+    document.querySelector('#weatherIcon').src = `https://openweathermap.org/img/w/${weatherObj.weatherIcon}.png`;
 
     document.querySelector('.minTemp').textContent = `Min - ${weatherObj.tempMin}°C`; 
     document.querySelector('.maxTemp').textContent = `Max - ${weatherObj.tempMax}°C`;
