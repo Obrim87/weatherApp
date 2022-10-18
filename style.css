@@ -1,0 +1,107 @@
+:root {
+  --mainTextColour: azure;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+
+.backgroundImg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--mainTextColour);
+}
+
+#location, #location:focus {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--mainTextColour);
+  color: var(--mainTextColour);
+  text-align: center;
+  padding: 5px 5px;
+  outline: none;
+  font-weight: bold;
+}
+
+input::placeholder{
+  color: var(--mainTextColour);
+  font-weight: bold;
+}
+
+.search {
+  filter: invert(95%) sepia(2%) saturate(1260%) hue-rotate(121deg) brightness(104%) contrast(107%);
+  width: 25px;
+  cursor: pointer;
+}
+
+.input {
+  margin: 100px;
+  text-align: center;
+}
+
+.leftWrapper {
+  margin: 80px 40px;
+}
+
+.cityName {
+  font-size: 3.5rem;
+}
+
+.temp {
+  font-size: 3.5rem;
+}
+
+.rightWrapper {
+  margin: 80px 40px;
+}
+
+.rightWrapper div:nth-child(n+3){
+  padding: 5px;
+}
+
+.weatherDesc {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+.weatherIcon {
+  display: inline-block;
+}
+
+.loading {
+  display: none;
+  width: 80px;
+  height: 80px;
+  justify-items: center;
+  opacity: 0.5;
+  margin: 40px auto;
+}
+.loading:after {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loading 1.2s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

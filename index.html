@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <title>Weather App</title>
+</head>
+<body>
+  <img src="./img/8562848_25501.jpg" alt="" srcset="" class='backgroundImg'>
+
+  <div class="wrapper">
+    <div class="input">
+      <div class="inputWrapper">
+        <input type="text" name="location" id="location" placeholder='Enter Location...' value='Brisbane' required>
+        <img src="./img/search-icon.svg" alt="Search" srcset="" class='search'>
+      </div>
+      <!-- <div class="loading">retrieving data...</div> -->
+      <div class="loading"></div>
+    </div>
+    <div class="leftWrapper">
+      
+      <div class="cityName"></div>
+      <div class="date"></div>
+      <div class="temp"></div>
+      <div class="feelsLike"></div>
+      
+    </div>
+    <div class="rightWrapper">
+      <div class="weatherDesc"></div>
+      <div class="weatherIcon">
+        <img src="" alt="" srcset="" id='weatherIcon'>
+      </div>
+      <div class="minTemp"></div>
+      <div class="maxTemp"></div>
+      <div class="humidity"></div>
+      <div class="wind"></div>
+    </div>
+  </div>
+
+  <script src="script.js" type='module'></script>
+</body>
+</html>
