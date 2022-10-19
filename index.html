@@ -12,23 +12,22 @@
 </head>
 <body>
   <img src="./img/8562848_25501.jpg" alt="" srcset="" class='backgroundImg'>
-
+  <div class="temperature">
+    <span class="celcius">°C</span><span class='slash'>/</span><span class="fahrenheit">°F</span>
+  </div>
   <div class="wrapper">
     <div class="input">
       <div class="inputWrapper">
-        <input type="text" name="location" id="location" placeholder='Enter Location...' required>
+        <input type="text" name="location" id="location" placeholder='Enter Location...' value='Brisbane' required>
         <img src="./img/search-icon.svg" alt="Search" srcset="" class='search'>
       </div>
-      <!-- <div class="loading">retrieving data...</div> -->
       <div class="loading"></div>
     </div>
     <div class="leftWrapper">
-      
       <div class="cityName"></div>
       <div class="date"></div>
       <div class="temp"></div>
       <div class="feelsLike"></div>
-      
     </div>
     <div class="rightWrapper">
       <div class="weatherDesc"></div>

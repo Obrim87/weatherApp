@@ -16,6 +16,30 @@
   z-index: -1;
 }
 
+.temperature {
+  position: absolute;
+  color: var(--mainTextColour);
+  left: 20px;
+  top: 20px;
+}
+
+.celcius, .fahrenheit {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.celcius {
+  cursor: pointer;
+}
+
+.slash {
+  cursor: default;
+}
+
+.fahrenheit {
+  color: lightgrey;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
